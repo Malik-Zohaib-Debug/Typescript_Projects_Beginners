@@ -1,21 +1,16 @@
 import PromptSync from "prompt-sync";
-//import menu from "./menu.mjs";
+import menu from './menu.mjs';
 
 const prompt = PromptSync();
 
 console.log("\t\tCLI-Calculator Created Using Nodejs By Zohaib");
 
-console.log("\nPress 1. For Addition");
-console.log("Press 2. For Subtraction");
-console.log("Press 3. For Multiplication");
-console.log("Press 4. For Division");
-console.log("Press 5. For MOD");
-console.log("Press 6. to terminate the program");
-
+menu();
 
 // 1st user-input
 let userInput = Number(prompt("\nEnter your choice here: "));
 do{
+
     let num1 = 0, num2 = 0;
     
     if(userInput === 1){
@@ -57,6 +52,7 @@ do{
         console.log("Please select the options from 1 to 6");
     }
     userInput = Number(prompt("\nEnter your choice here: "));
+    menu();
 } while(userInput != 6);
 
 console.log("Thanks for using my calculator");

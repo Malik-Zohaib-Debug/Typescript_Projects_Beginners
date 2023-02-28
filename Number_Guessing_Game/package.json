@@ -1,0 +1,18 @@
+{
+  "name": "number_guessing_game",
+  "version": "1.0.0",
+  "description": "Number guessing game that can guess a number between 1 to 100",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zohaib",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3"
+  }
+}

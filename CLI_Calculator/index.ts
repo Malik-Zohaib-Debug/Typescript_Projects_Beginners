@@ -1,13 +1,12 @@
 import inquirer from "inquirer";
 
 async function askQuestions(){
-    var answers = await inquirer
-    .prompt([
+    var answers = await inquirer.prompt([
       {
         type: "list",
         name: "operator",
         message: "What type of operation you want to perform?",
-        choices: ["Addition", "Subtraction", "Multiplication", "Division", "Mod"]
+        choices: ["Addition", "Subtraction", "Multiplication", "Division"]
       },
       {
         type: "input",
@@ -24,7 +23,7 @@ async function askQuestions(){
         console.log(`${answers.num1} + ${answers.num2} = ${answers.num1 + answers.num2}`);
     }
     if(answers.operator === "Subtraction"){
-        console.log(`${answers.num1} + ${answers.num2} = ${answers.num1 - answers.num2}`);
+        console.log(`${answers.num1} - ${answers.num2} = ${answers.num1 - answers.num2}`);
     }
     if(answers.operator === "Multiplication"){
         console.log(`${answers.num1} * ${answers.num2} = ${answers.num1 * answers.num2}`);
@@ -37,8 +36,7 @@ async function askQuestions(){
 async function startAgain(){
     do{
         await askQuestions();
-        var userInput = await inquirer
-        .prompt(
+        var userInput = await inquirer.prompt(
             {
                 type: "input",
                 name: "restart",

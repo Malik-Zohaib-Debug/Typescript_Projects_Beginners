@@ -1,14 +1,18 @@
 {
   "name": "cli_calculator",
   "version": "1.0.0",
-  "description": "CLI Calculator build using nodejs",
+  "description": "command line based calculator",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Zohaib",
   "license": "ISC",
   "dependencies": {
-    "prompt-sync": "^4.2.0"
+    "inquirer": "^9.1.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3"
   }
 }

@@ -1,0 +1,21 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "simple cli based application created in typescript that can store your daily tasks",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "inquirer"
+  ],
+  "author": "zohaib",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3"
+  }
+}

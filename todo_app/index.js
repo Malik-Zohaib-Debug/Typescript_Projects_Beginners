@@ -25,6 +25,9 @@ async function askAgain() {
             }
         ]);
     } while (userInput.userFeedBack == 'Y' || userInput.userFeedBack == 'y' || userInput.userFeedBack == 'YES' || userInput.userFeedBack == 'yes');
+    console.log("Your Todo List");
+    todos.forEach((todo_list) => {
+        console.log("-> " + todo_list);
+    });
 }
 askAgain();
-todos.forEach((todo) => console.log(todo));

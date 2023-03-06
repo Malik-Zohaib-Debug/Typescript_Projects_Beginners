@@ -1,44 +1,35 @@
 import inquirer from "inquirer";
-
-
-function countWords(text: String){
+function countWords(text) {
     let count;
     count = 0;
-    var isWord: Boolean;
+    var isWord;
     isWord = false;
-
-    for(var i=0; i<text.length; i++){
-        if(text[i] === ' ' || text[i] === '\t' || text[i] === '\n'){
+    for (var i = 0; i < text.length; i++) {
+        if (text[i] === ' ' || text[i] === '\t' || text[i] === '\n') {
             isWord = false;
-        } else if (!isWord){
+        }
+        else if (!isWord) {
             count = count + 1;
             isWord = true;
         }
     }
-
     return count;
 }
-
-function countCharacters(text: String){
+function countCharacters(text) {
     let count = 0;
-    for(let t in text){
-        if(t == ' '){
+    for (let t in text) {
+        if (t == ' ') {
             continue;
-        } else {
+        }
+        else {
             count++;
         }
     }
     return count;
 }
-
-interface ansType{
-    text: String,
-    operation: String
-}
-
-async function askQuestion(){
-    var response: ansType = await inquirer
-    .prompt([
+async function askQuestion() {
+    var response = await inquirer
+        .prompt([
         {
             type: "input",
             name: "text",
@@ -50,14 +41,14 @@ async function askQuestion(){
             message: "What operation you want to perform on your text: ",
             choices: ["Count Words", "Count Characters"]
         }
-    ])
-    if(response.operation === "Count Words"){
-       let totalWords = countWords(response.text);
-       console.log("Total Number of Words -> ", totalWords);
-    } else if(response.operation === "Count Characters"){
+    ]);
+    if (response.operation === "Count Words") {
+        let totalWords = countWords(response.text);
+        console.log("Total Number of Words -> ", totalWords);
+    }
+    else if (response.operation === "Count Characters") {
         let totalChars = countCharacters(response.text);
         console.log("Total Number of Characters -> ", totalChars);
-     }
+    }
 }
-
 askQuestion();

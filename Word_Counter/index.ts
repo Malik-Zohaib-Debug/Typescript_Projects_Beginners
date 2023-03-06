@@ -60,4 +60,20 @@ async function askQuestion(){
      }
 }
 
-askQuestion();
+async function askAgain(){
+    do{
+        await askQuestion();
+        var userInput = await inquirer
+        .prompt([
+            {
+                type: "list",
+                name: "input",
+                message: "Do you want to continue ? ",
+                choices: ["No", "Yes"]
+            }
+        ])
+    } while(userInput.Input === 'No');
+    console.log("Thanks for using my program");
+}
+
+askAgain();

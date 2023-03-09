@@ -1,0 +1,18 @@
+{
+  "name": "countdown_timer",
+  "version": "1.0.0",
+  "description": "created countdown timer command line based app using inquirer and date module",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zohaib",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3"
+  }
+}

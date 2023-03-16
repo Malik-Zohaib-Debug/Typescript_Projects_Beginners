@@ -1,0 +1,20 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "description": "implemented cli based quiz app project with inquirer, chalk and chalk animation",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zohaib",
+  "license": "MIT",
+  "dependencies": {
+    "chalk-animation": "^2.0.3",
+    "inquirer": "^9.1.4"
+  },
+  "devDependencies": {
+    "@types/chalk-animation": "^1.6.1",
+    "@types/inquirer": "^9.0.3"
+  }
+}

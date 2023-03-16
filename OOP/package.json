@@ -1,0 +1,12 @@
+{
+  "name": "oop",
+  "version": "1.0.0",
+  "description": "implemtation of oop in typescript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zohaib",
+  "license": "MIT"
+}

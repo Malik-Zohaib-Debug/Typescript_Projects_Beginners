@@ -1,0 +1,15 @@
+{
+  "name": "student_management_system",
+  "version": "1.0.0",
+  "description": "implemented student management system using typescript oop",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "oop"
+  ],
+  "author": "zohaib",
+  "license": "MIT"
+}

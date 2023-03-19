@@ -1,0 +1,19 @@
+{
+  "name": "oop_bank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zohaib",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "chalk-animation": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/chalk-animation": "^1.6.1"
+  }
+}
